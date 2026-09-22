@@ -1,0 +1,53 @@
+/* Custom Styles for Arsh Makeup Artist Website */
+
+/* Smooth Scroll behavior is already handled by Tailwind class 'scroll-smooth' */
+
+/* Slow zoom animation for Hero Background */
+@keyframes slowZoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.15); }
+}
+
+.zoom-animation {
+    animation: slowZoom 20s ease-in-out infinite alternate;
+}
+
+/* Navbar Scroll Effect */
+#navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#navbar.scrolled .logo-text {
+    color: #1a1a1a;
+}
+
+#navbar.scrolled .logo-sub {
+    color: #c9a08e;
+}
+
+#navbar.scrolled .nav-link {
+    color: #1a1a1a;
+}
+
+#navbar.scrolled .nav-link:hover {
+    color: #c9a08e;
+}
+
+#navbar.scrolled #mobile-menu-btn {
+    color: #1a1a1a;
+}
+
+/* Customizing Date Input icon color (WebKit) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.6) sepia(0.2) saturate(0.5) hue-rotate(340deg) brightness(0.9) contrast(0.9);
+    cursor: pointer;
+}
+
+/* Enhancing Tailwind's selection */
+::selection {
+    background: #c9a08e; /* primary color */
+    color: #ffffff;
+}
