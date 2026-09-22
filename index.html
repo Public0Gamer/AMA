@@ -49,9 +49,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center">
                 <!-- Logo -->
-                <div class="flex-shrink-0">
-                    <a href="#" class="font-serif text-2xl font-bold tracking-widest text-white logo-text transition-colors duration-300">ARSH</a>
-                    <span class="block text-[10px] uppercase tracking-[0.3em] text-white/80 logo-sub transition-colors duration-300 text-center">Makeup Artist</span>
+                <div class="flex-shrink-0 text-center">
+                    <a href="#" class="font-serif text-4xl md:text-5xl font-bold tracking-widest text-white logo-text transition-colors duration-300">ARSH</a>
+                    <span class="block text-xs md:text-sm uppercase tracking-[0.4em] text-white/80 logo-sub transition-colors duration-300 mt-1">Makeup Artist</span>
                 </div>
                 
                 <!-- Desktop Menu -->
@@ -85,11 +85,11 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden bg-zinc-900">
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1595476108010-b4d1f10d5e43?q=80&w=2000&auto=format&fit=crop" alt="Bridal Makeup" class="w-full h-full object-cover zoom-animation" />
-            <div class="absolute inset-0 bg-black/40"></div>
+            <img src="images/hero.jpg" alt="Bridal Makeup" class="w-full h-full object-cover zoom-animation opacity-80" onerror="this.style.display='none'" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/70"></div>
         </div>
         
         <div class="relative z-10 text-center px-4" data-aos="fade-up" data-aos-duration="1500">
@@ -112,8 +112,8 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center gap-16">
                 <div class="w-full md:w-1/2 relative" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="relative z-10 p-4">
-                        <img src="https://images.unsplash.com/photo-1512496015851-a1c8caac34c7?q=80&w=1000&auto=format&fit=crop" alt="Arsh Makeup Artist" class="w-full h-auto object-cover shadow-2xl rounded-sm">
+                    <div class="relative z-10 p-4 bg-gray-100 rounded-sm">
+                        <img src="images/artist.jpg" alt="Arsh Makeup Artist" class="w-full h-auto object-cover shadow-2xl rounded-sm" onerror="this.src='https://via.placeholder.com/800x1000/f3f4f6/c9a08e?text=Arsh+Makeup+Artist'">
                     </div>
                     <!-- Decorative element -->
                     <div class="absolute top-0 left-0 w-3/4 h-3/4 border-2 border-primary/30 -z-0"></div>
